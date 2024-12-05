@@ -743,7 +743,7 @@ hr {
 }
 
 /* Responsivité */
-@media (max-width: 700) {
+@media (max-width: 768px) {
     
     /* Header */
     .header {
