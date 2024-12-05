@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>TP 1</title>
+		<link rel="stylesheet" href="css/style.css">
+        <meta name="compétence" content="Présentation des ressources pour la compétence 1">
+
+	</head>
+    <body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <!-- Logos à gauche -->
+            <div class="logos-left">
+                <img src="img/logo_iut.png" alt="Logo IUT de Toulouse" class="logo">
+                <img src="img/logo_ups.png" alt="Logo UPZ" class="logo"> <!-- logo UPS -->
+            </div>
+
+
+            <!-- Logo à droite -->
+            <div class="logo-right">
+                <img src="img/logo_but.png" alt="Logo BUT Informatique">
+            </div>
+        </div>
+
+
+        <!-- Menu de navigation horizontal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li class="dropdown">
+                    <a href="#">Compétences</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competence1.html">Compétence 1</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>    
+    </header>
+        <h1>Compétence 1</h1>
+        <h2 class="titrepage">Réaliser un développement d’application</h2>
+        <div class="partieAC">
+            <img class="img-competences" alt="Compétences 1" src="data:image/png;base64,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" />
+            <div class="descriptioncompetence">
+                <p style="margin-bottom: 20px;">Liste des apprentissages critiques :</p>
+                <ul>
+                    <li><span class="gras">AC 1</span> Implémenter des conceptions simples</li>
+                    <li><span class="gras">AC 2</span> Élaborer des conceptions simples</li>
+                    <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                    <li><span class="gras">AC 4</span> Développer des interfaces utilisateurs</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence1">
+            <h3>Évaluation :</h3>
+            <table class="table-evaluation">
+                <tr class="table-evaluation couleurC1fonce">
+                    <th>Ressources</th> <td>R1.01</td> <td>R1.02</td> <td>R1.10</td> <td>R1.12</td>
+                </tr>
+                <tr class="table-evaluation">
+                    <th>Coefficient</th> <td>42</td> <td>12</td> <td>6</td> <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="detailcompetence1">
+            <h3>SAE S1.01 : Implémentation d'un besoin client</h3>
+            <div class="descriptioncompetence">
+                <ul>
+                    <li><span class="gras">AC 1</span> Implémenter des conceptions simples</li>
+                    <li><span class="gras">AC 2</span> Élaborer des conceptions simples</li>
+                    <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                </ul>
+            </div>
+            <div class="descriptioncompetence">
+                <p class="gras">Problématique professionnelle et objectifs</p>
+                <p>La problématique professionnelle est la création de tout ou partie d'une application simple. Cette SAÉ permet une première mise en pratique du développement autour d'un besoin client.</p>
+                <p class="gras">Description générique</p>
+                <p>En partant d'un besoin exprimé par un client, l'objectif est de réaliser une application qui réponde à ce besoin.</p>
+                <p class="gras">Livrables attendus dans le monde professionnel</p>
+                <ul>
+                    <li>- Code de l'application</li>
+                    <li>- Traces d'exécution des jeux d'essais</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence1">
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC1fonce">R1.01</h3>
+                    <h3>Initiation au développement</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Implémenter des conceptions simples</li>
+                        <li><span class="gras">AC 2</span> Élaborer des conceptions simples</li>
+                        <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est l'initiation au développement. Cette ressource est nécessaire pour la réalisation d'undéveloppement d'application et l'optimisation des applications informatiques.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Algorithmes fondamentaux (structures simples, recherche d'un élément, parcours, tri…)</li>
+                        <li>- Algorithmes sur les structures de données (itératifs et/ou récursifs)</li>
+                        <li>- Manipulation de listes, tableaux, collections dynamiques, statiques (accès direct ou séquentiels), piles, files, structures</li>
+                        <li>- Types abstraits de données simples : première approche de l'encapsulation</li>
+                        <li>- Notions de modularité</li>
+                        <li>- Premières notions de qualité (par ex. : nommage, assertions, documentation, sûreté de fonctionnement, jeu d'essais, performance…)</li>
+                        <li>- Lecture/écriture de fichiers</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Introduction à la gestion de versions</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC1fonce">R1.02</h3>
+                    <h3>Développement d’interfaces web</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                        <li><span class="gras">AC 4</span> Développer des interfaces utilisateurs</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'apprendre les techniques de création de documents numériques sur le web en réponse à des besoins client. Cette ressource est une base pour réaliser un développement d'application tout en appréhendant les besoins du client et de l'utilisateur</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Spécifications d'interfaces utilisateur, maquettage (sketch, scénarios, persona…)</li>
+                        <li>- Technologies d'affichage du Web (par ex. : Hypertext Markup Language (HTML), Cascading Style Sheet (CSS)…)</li>
+                        <li>- Test de la conformité des sites Web aux standards d'accessibilité World Wide Web Consortium (W3C) / Web Accessibility Initiative (WAI)</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Génération de documents numériques</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC1fonce">R1.10</h3>
+                    <h3>Anglais</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                        <li><span class="gras">AC 4</span> Développer des interfaces utilisateurs</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'introduire l'anglais de spécialité informatique et de développer sa culture générale et scientifique. Cette ressource permet l'acquisition du vocabulaire de base de l'informatique.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Vocabulaire de base de l'informatique et de la bureautique</li>
+                        <li>- Initiation aux techniques de présentation orale</li>
+                        <li>- Compréhension des ressources à l'écrit et à l'oral (par ex. : documentations, tutoriels, documents scientifiques d'actualité…)</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC1fonce">R1.12</h3>
+                    <h3>Projet professionnel et personnel</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>                        
+                        <li><span class="gras">AC 1</span> Implémenter des conceptions simples</li>
+                        <li><span class="gras">AC 2</span> Élaborer des conceptions simples</li>
+                        <li><span class="gras">AC 3</span> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                        <li><span class="gras">AC 4</span> Développer des interfaces utilisateurs</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'identifier le savoir-être et le savoir-faire. Cette ressource permet de se familiariser
+                        avec les éléments constitutifs du B.U.T. informatique (AC), de mieux cerner sa connaissance de soi et d'apprendre à
+                        définir ses compétences au travers de ses expériences.</p>
+                    <p class="gras">Savoirs de référence étudiés sur l'année</p>
+                    <ul>
+                        <li>- Appropriation de la démarche PPP : connaissance de soi (intérêt, curiosité, aspirations, motivations), accompagnement dans la définition d'une stratégie personnelle permettant la réalisation du projet professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Démarche réflexive et introspective (découverte de ses valeurs, qualités, motivations, savoirs, savoir-être, savoirs-faire) au travers, par exemple de son expérience et ses centres d'intérêt</li>
+                        <li>• Démarche prospective en termes d'avenir, souhait, motivation vis-à-vis d'un projet d'études ou professionnel</li>
+                        <li>• Initiation à la démarche réflexive (interrogation et analyse de son expérience)</li>
+                    </ul>
+                    <ul>
+                        <li>- Appropriation de la formation</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Appropriation des compétences de la formation (identification des blocs de compétences)</li>
+                        <li>• Référencement des compétences et association avec la réalité du terrain</li>
+                        <li>• Découverte et analyse des parcours B.U.T. de la spécialité</li>
+                        <li>• Accompagnement du choix des parcours</li>
+                    </ul>
+                    <ul>
+                        <li>- Découverte des métiers et connaissance du territoire</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Faire le lien avec les métiers (fiches ROME, association article 1)</li>
+                        <li>• Débouchés en fonction du territoire</li>
+                        <li>• Bassins d'entreprise, réseaux d'entreprise, implantations</li>
+                        <li>• Identifier les métiers en lien avec la formation, en analyser les principales caractéristiques</li>
+                    </ul>
+                    <ul>
+                        <li>- Projection dans un environnement professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Codes, usages et culture d'entreprise</li>
+                        <li>• Intégration des codes sociaux au niveau France, Europe pour s'ouvrir à la diversité culturelle, ouverture sur la mondialisation socio-économique</li>
+                        <li>• Construire son réseau professionnel : découvrir les réseaux et sensibiliser à l'identité numérique</li>
+                    </ul>
+                    <p class="gras">Savoirs de référence privilégiés ce semestre</p>
+                    <ul>
+                        <li>- Meilleure connaissance de soi</li>
+                        <li>- Définition de ses compétences au travers des expériences et des SAÉ</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><a href="competence1.html" class="hyperlinkrevenirhaut">Revenir en haut de la page</a></p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Plan du site à gauche -->
+            <div class="footer-section left">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- RGPD au centre -->
+            <div class="footer-section center">
+                <h4><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD - CNIL</a></h4>
+            </div>
+
+
+            <!-- Développement par à droite -->
+            <div class="footer-section right">
+                <h4>Développé par :</h4>
+                <p class="equipe">Equipe 4</p>
+                <p class="equipe">Younes, Tylan, Abigaelle, Matthéo, Florentin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

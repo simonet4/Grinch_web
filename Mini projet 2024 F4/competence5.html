@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>TP 1</title>
+		<link rel="stylesheet" href="css/style.css">
+        <meta name="compétence" content="Présentation des ressources pour la compétence 5">
+
+	</head>
+    <body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <!-- Logos à gauche -->
+            <div class="logos-left">
+                <img src="img/logo_iut.png" alt="Logo IUT de Toulouse" class="logo">
+                <img src="img/logo_ups.png" alt="Logo UPZ" class="logo"> <!-- logo UPS -->
+            </div>
+
+
+            <!-- Logo à droite -->
+            <div class="logo-right">
+                <img src="img/logo_but.png" alt="Logo BUT Informatique">
+            </div>
+        </div>
+
+
+        <!-- Menu de navigation horizontal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li class="dropdown">
+                    <a href="#">Compétences</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competence1.html">Compétence 1</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>    
+    </header>
+        <h1>Compétence 5</h1>
+        <h2 class="titrepage">Conduire un projet</h2>
+        <div class="partieAC">
+            <img class="img-competences" alt="Compétences 5" src="data:image/png;base64,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" />
+            <div class="descriptioncompetence">
+                <p style="margin-bottom: 20px;">Liste des apprentissages critiques :</p>
+                <ul>
+                    <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                    <li><span class="gras">AC 2</span> Mettre en place les outils de gestion de projet</li>
+                    <li><span class="gras">AC 3</span> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence5">
+            <h3>Évaluation :</h3>
+            <table class="table-evaluation">
+                <tr class="table-evaluation couleurC5fonce">
+                    <th>Ressources</th> <td>R1.02</td> <td>R1.08</td> <td>R1.11</td> <td>R1.12</td>
+                </tr>
+                <tr class="table-evaluation">
+                    <th>Coefficient</th> <td>18</td> <td>27</td> <td>15</td> <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="detailcompetence5">
+            <h3>SAE S1.05 : Recueil de besoins</h3>
+            <div class="descriptioncompetence">
+                <ul>
+                    <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                    <li><span class="gras">AC 2</span> Mettre en place les outils de gestion de projet</li>
+                    <li><span class="gras">AC 3</span> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                </ul>
+            </div>
+            <div class="descriptioncompetence">
+                <p class="gras">La problématique professionnelle est la conduite de projet
+                    à partir d'un besoin client. Cette SAÉ permet une
+                    première approche du recueil de besoins à travers le
+                    dialogue continu avec le client pour affiner les attentes
+                    fonctionnelles.</p>
+                <p class="gras">Description générique</p>
+                <p>Dans un contexte professionnel, un client demande de
+                    formaliser ses attentes liées à un projet.</p>
+                <p class="gras">Livrables attendus dans le monde professionnel</p>
+                <ul>
+                    <li>- Questionnaire destiné au client</li>
+                    <li>- Présentation des besoins (maquettes, scénarios, persona…) s'appuyant sur des outils de bureautique</li>
+                    <li>- Présentation orale accompagnée de différents supports numériques (site web, poster, affiche, powerpoint…)</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence5">
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC5fonce">R1.02</h3>
+                    <h3>Développement d’interfaces web</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'apprendre les techniques de création de documents numériques sur le web en réponse à des besoins client. Cette ressource est une base pour réaliser un développement d'application tout en appréhendant les besoins du client et de l'utilisateur</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Spécifications d'interfaces utilisateur, maquettage (sketch, scénarios, persona…)</li>
+                        <li>- Technologies d'affichage du Web (par ex. : Hypertext Markup Language (HTML), Cascading Style Sheet (CSS)…)</li>
+                        <li>- Test de la conformité des sites Web aux standards d'accessibilité World Wide Web Consortium (W3C) / Web Accessibility Initiative (WAI)</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Génération de documents numériques</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC5fonce">R1.08</h3>
+                    <h3>Introduction à la gestion des organisations</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est de découvrir l'organisation et la transformation numérique. D'une part, la découverte de
+                        l'organisation permet une compréhension des enjeux et les besoins sous-jacents des projets internes et externes
+                        animant les acteurs qui la composent. Les défis organisationnels du XXIe siècle, comme la transformation numérique
+                        des organisations, amènent également à se questionner sur les évolutions informatiques et managériales dans le but
+                        de mieux appréhender l'écosystème numérique et le futur contexte professionnel.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Fondement des organisations</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Définition et finalité de l'organisation</li>
+                        <li>• Environnement de l'organisation</li>
+                        <li>• Acteurs et fonctions de l'organisation</li>
+                        <li>• Culture d'entreprise</li>
+                        <li>• Situer une activité dans une organisation</li>
+                    </ul>
+                    <ul>
+                        <li>- Caractéristiques stratégiques et structurelles des organisations :</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Typologie des organisations</li>
+                        <li>• Diagnostics et choix stratégiques</li>
+                    </ul>
+                    <ul>
+                        <li>- Enjeux de la transformation numérique des organisations :</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Digitalisation des organisations</li>
+                        <li>• Nouvelles formes de management</li>
+                        <li>• Structure en réseau et entreprise virtuelle</li>
+                        <li>• Responsabilité sociétale des entreprises</li>
+                    </ul>
+                    <ul>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC5fonce">R1.11</h3>
+                    <h3>Bases de la communication</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                        <li><span class="gras">AC 3</span> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'aborder les fondamentaux de la communication. Cette ressource permet une
+                        approche sur l'importance de bien communiquer face à un client, de formuler ses questions de manière claire et
+                        pertinente pour recueillir les besoins du client. Elle permet de développer l'esprit critique et la capacité d'analyse
+                        nécessaires à la collecte d'informations. Enfin, la ressource permet la mise en place et l'appropriation d'outils de
+                        communication pour restituer les informations (sous formes diverses du papier au web) à destination d'un client ou
+                        d'une équipe.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Communication verbale et non verbale</li>
+                        <li>- Recherche documentaire, appropriation, réutilisation de l'information, prise de notes, analyse critique des sources</li>
+                        <li>- Développement d'une attitude critique</li>
+                        <li>- Recueil des besoins (méthode de collecte, d'enquête, d'interview)</li>
+                        <li>- Conception de documents de communication (sous divers formats dont numériques)</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC5fonce">R1.12</h3>
+                    <h3>Projet professionnel et personnel</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>                        
+                        <li><span class="gras">AC 1</span> Appréhender les besoins du client et de l'utilisateur</li>
+                        <li><span class="gras">AC 2</span> Mettre en place les outils de gestion de projet</li>
+                        <li><span class="gras">AC 3</span> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'identifier le savoir-être et le savoir-faire. Cette ressource permet de se familiariser
+                        avec les éléments constitutifs du B.U.T. informatique (AC), de mieux cerner sa connaissance de soi et d'apprendre à
+                        définir ses compétences au travers de ses expériences.</p>
+                    <p class="gras">Savoirs de référence étudiés sur l'année</p>
+                    <ul>
+                        <li>- Appropriation de la démarche PPP : connaissance de soi (intérêt, curiosité, aspirations, motivations), accompagnement dans la définition d'une stratégie personnelle permettant la réalisation du projet professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Démarche réflexive et introspective (découverte de ses valeurs, qualités, motivations, savoirs, savoir-être, savoirs-faire) au travers, par exemple de son expérience et ses centres d'intérêt</li>
+                        <li>• Démarche prospective en termes d'avenir, souhait, motivation vis-à-vis d'un projet d'études ou professionnel</li>
+                        <li>• Initiation à la démarche réflexive (interrogation et analyse de son expérience)</li>
+                    </ul>
+                    <ul>
+                        <li>- Appropriation de la formation</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Appropriation des compétences de la formation (identification des blocs de compétences)</li>
+                        <li>• Référencement des compétences et association avec la réalité du terrain</li>
+                        <li>• Découverte et analyse des parcours B.U.T. de la spécialité</li>
+                        <li>• Accompagnement du choix des parcours</li>
+                    </ul>
+                    <ul>
+                        <li>- Découverte des métiers et connaissance du territoire</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Faire le lien avec les métiers (fiches ROME, association article 1)</li>
+                        <li>• Débouchés en fonction du territoire</li>
+                        <li>• Bassins d'entreprise, réseaux d'entreprise, implantations</li>
+                        <li>• Identifier les métiers en lien avec la formation, en analyser les principales caractéristiques</li>
+                    </ul>
+                    <ul>
+                        <li>- Projection dans un environnement professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Codes, usages et culture d'entreprise</li>
+                        <li>• Intégration des codes sociaux au niveau France, Europe pour s'ouvrir à la diversité culturelle, ouverture sur la mondialisation socio-économique</li>
+                        <li>• Construire son réseau professionnel : découvrir les réseaux et sensibiliser à l'identité numérique</li>
+                    </ul>
+                    <p class="gras">Savoirs de référence privilégiés ce semestre</p>
+                    <ul>
+                        <li>- Meilleure connaissance de soi</li>
+                        <li>- Définition de ses compétences au travers des expériences et des SAÉ</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><a href="competence5.html" class="hyperlinkrevenirhaut">Revenir en haut de la page</a></p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Plan du site à gauche -->
+            <div class="footer-section left">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- RGPD au centre -->
+            <div class="footer-section center">
+                <h4><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD - CNIL</a></h4>
+            </div>
+
+
+            <!-- Développement par à droite -->
+            <div class="footer-section right">
+                <h4>Développé par :</h4>
+                <p class="equipe">Equipe 4</p>
+                <p class="equipe">Younes, Tylan, Abigaelle, Matthéo, Florentin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Contactez l'IUT</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="contacts" content="Prendre contact avec l'IUT Informatique Paul Sabatier à Toulouse pour le BUT Informatique de Rangueil">
+	</head>
+	<body>
+	
+	
+<!-- Header -->
+<header>
+    <div class="header-top">
+        <!-- Logos à gauche -->
+        <div class="logos-left">
+            <img src="img/logo_iut.png" alt="Logo IUT de Toulouse" class="logo">
+            <img src="img/logo_ups.png" alt="Logo UPZ" class="logo"> <!-- logo UPS -->
+        </div>
+
+
+        <!-- Logo à droite -->
+        <div class="logo-right">
+            <img src="img/logo_but.png" alt="Logo BUT Informatique">
+        </div>
+    </div>
+
+
+    <!-- Menu de navigation horizontal -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation du BUT</a></li>
+            <li class="dropdown">
+                <a href="#">Compétences</a>
+                <ul class="dropdown-menu">
+                    <li><a href="competence1.html">Compétence 1</a></li>
+                    <li><a href="competence2.html">Compétence 2</a></li>
+                    <li><a href="competence3.html">Compétence 3</a></li>
+                    <li><a href="competence4.html">Compétence 4</a></li>
+                    <li><a href="competence5.html">Compétence 5</a></li>
+                    <li><a href="competence6.html">Compétence 6</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>    
+</header>
+	
+	
+	<h1>Contactez l'IUT</h1>
+    <div class="partie">
+        <form action="#" method="post">
+			<div class="droite">
+				<div class="inputs">
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" name="prenom">
+					<br>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom">
+					<br>
+					<label for="email">Adresse e-mail</label>
+					<input type="email" id="email" name="email">
+					<br>
+					<button id="boutenvoyer" type="button">Envoyer</button>
+					<br>
+				</div>
+			</div>
+		</form>
+			<div class="gauche">
+				
+				<label for="message">Message</label>
+				<br>
+				<textarea id="message" name="message" rows="4"></textarea>
+				
+			</div>
+		</div>
+			<br>
+    <div class="partie-basse">
+		<div class="droite-b">
+			<div class="image1">
+				<img id= "icon" src="img/photo-iut.jpg" alt="Photo de l'IUT">
+			</div>
+		</div>
+		<div class="gauche-b">
+			<div class="image2">
+				<p> Adresse de l'IUT : 133 Avenue de Rangueil 31400 Toulouse </p>
+
+				<img id="map" src="img/carte-iut-mini.jpg" alt="Carte montrant la position de l'IUT">
+			</div>
+		</div>
+    </div>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Plan du site à gauche -->
+        <div class="footer-section left">
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- RGPD au centre -->
+        <div class="footer-section center">
+            <h4><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD - CNIL</a></h4>
+        </div>
+
+
+        <!-- Développement par à droite
+          -->
+        <div class="footer-section right">
+            <h4>Développé par :</h4>
+            <p class="equipe">Equipe 4</p>
+            <p class="equipe">Younes, Tylan, Abigaelle, Matthéo, Florentin</p>
+        </div>
+    </div>
+</footer>
+	</body>

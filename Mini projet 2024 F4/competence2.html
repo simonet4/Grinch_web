@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>TP 1</title>
+		<link rel="stylesheet" href="css/style.css">
+        <meta name="compétence" content="Présentation des ressources pour la compétence 2">
+
+	</head>
+    <body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <!-- Logos à gauche -->
+            <div class="logos-left">
+                <img src="img/logo_iut.png" alt="Logo IUT de Toulouse" class="logo">
+                <img src="img/logo_ups.png" alt="Logo UPZ" class="logo"> <!-- logo UPS -->
+            </div>
+
+
+            <!-- Logo à droite -->
+            <div class="logo-right">
+                <img src="img/logo_but.png" alt="Logo BUT Informatique">
+            </div>
+        </div>
+
+
+        <!-- Menu de navigation horizontal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li class="dropdown">
+                    <a href="#">Compétences</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competence1.html">Compétence 1</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>    
+    </header>
+        <h1>Compétence 2</h1>
+        <h2 class="titrepage">Optimiser des applications</h2>
+        <div class="partieAC">
+            <img class="img-competences" alt="Compétences 2" src="data:image/png;base64,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" />
+            <div class="descriptioncompetence">
+                <p style="margin-bottom: 20px;">Liste des apprentissages critiques :</p>
+                <ul>
+                    <li><span class="gras">AC 1</span> Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données…)</li>
+                    <li><span class="gras">AC 2</span> Comparer des algorithmes pour des problèmes classiques (tris simples, recherche…)</li>
+                    <li><span class="gras">AC 3</span> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence2">
+            <h3>Évaluation :</h3>
+            <table class="table-evaluation">
+                <tr class="table-evaluation couleurC2fonce">
+                    <th>Ressources</th> <td>R1.01</td> <td>R1.03</td> <td>R1.06</td> <td>R1.07</td> <td>R1.12</td>
+                </tr>
+                <tr class="table-evaluation">
+                    <th>Coefficient</th> <td>24</td> <td>6</td> <td>15</td> <td>15</td> <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="detailcompetence2">
+            <h3>SAE S1.02 : Comparaison d’approches algorithmiques</h3>
+            <div class="descriptioncompetence">
+                <ul>
+                    <li><span class="gras">AC 1</span> Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données…)</li>
+                    <li><span class="gras">AC 2</span> Comparer des algorithmes pour des problèmes classiques (tris simples, recherche…)</li>
+                    <li><span class="gras">AC 3</span> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+                </ul>
+            </div>
+            <div class="descriptioncompetence">
+                <p class="gras">Problématique professionnelle et objectifs</p>
+                <p>La problématique professionnelle est le choix d'une
+                    approche de résolution de problème. Cette SAÉ permet
+                    une première réflexion autour des stratégies
+                    algorithmiques pour résoudre un même problème.</p>
+                <p class="gras">Description générique</p>
+                <p>En partant d'un besoin exprimé par un client, il faut
+                    réaliser une implémentation, comparer plusieurs
+                    approches pour la résolution d'un problème et effectuer
+                    des mesures de performance simples.
+                    Livrables attendus dans le monde prof</p>
+                <p class="gras">Livrables attendus dans le monde professionnel</p>
+                <ul>
+                    <li>- Code de l'application</li>
+                    <li>- Présentation du problème et de la comparaison des
+                        différentes approches
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence2">
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC2fonce">R1.01</h3>
+                    <h3>Initiation au développement</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données…)</li>
+                        <li><span class="gras">AC 2</span> Comparer des algorithmes pour des problèmes classiques (tris simples, recherche…)</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est l'initiation au développement. Cette ressource est nécessaire pour la réalisation d'undéveloppement d'application et l'optimisation des applications informatiques.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Algorithmes fondamentaux (structures simples, recherche d'un élément, parcours, tri…)</li>
+                        <li>- Algorithmes sur les structures de données (itératifs et/ou récursifs)</li>
+                        <li>- Manipulation de listes, tableaux, collections dynamiques, statiques (accès direct ou séquentiels), piles, files, structures</li>
+                        <li>- Types abstraits de données simples : première approche de l'encapsulation</li>
+                        <li>- Notions de modularité</li>
+                        <li>- Premières notions de qualité (par ex. : nommage, assertions, documentation, sûreté de fonctionnement, jeu d'essais, performance…)</li>
+                        <li>- Lecture/écriture de fichiers</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Introduction à la gestion de versions</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC2fonce">R1.03</h3>
+                    <h3>Développement d’interfaces web</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données…)</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est de découvrir la structure et les composants d'un ordinateur. Cette ressource permet de
+                        découvrir les différents composants matériels et logiciels internes qui constituent un ordinateur, de manière à
+                        appréhender le fonctionnement, mais aussi les limites de leur utilisation.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Architecture générale d'un ordinateur, histoire et évolution de l'informatique</li>
+                        <li>- Codage (codage des informations de base : nombres, caractères)</li>
+                        <li>- Arithmétique des traitements associés</li>
+                        <li>- Étude d'un ordinateur personnel (composants…)</li>
+                        <li>- Évolution des technologies et des systèmes</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC2fonce">R1.06</h3>
+                    <h3>Mathématiques discrètes</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 3</span> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est de mettre en place les outils mathématiques nécessaires aux bases de l'informatique.
+                        Elle aide à formaliser et mettre en œuvre des outils mathématiques pour l'informatique. Elle accompagne la mise en
+                        place des bases de données en explicitant les structures fondamentales de ces dernières.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Logique (prédicats, propositions…)</li>
+                        <li>- Théorie des ensembles</li>
+                        <li>- Algèbre de Boole</li>
+                        <li>- Arithmétique modulaire</li>
+                        <li>- Relations, applications</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Dénombrement</li>
+                        <li>- Numération</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC2fonce">R1.07</h3>
+                    <h3>Outils mathématiques fondamentaux</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 3</span> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est la remise à niveau des notions mathématiques de base. Cette ressource donne les
+                        outils mathématiques fondamentaux nécessaires à la programmation informatique.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Calcul numérique et algébrique</li>
+                        <li>- Systèmes et matrices (pivot de Gauss)</li>
+                        <li>- Graphes de fonction</li>
+                        <li>- Polynômes</li>
+                    </ul>
+                    <p class="gras">Prolongements suggérés</p>
+                    <ul>
+                        <li>- Géométrie du plan</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC2fonce">R1.12</h3>
+                    <h3>Projet professionnel et personnel</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>                        
+                        <li><span class="gras">AC 1</span> Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données…)</li>
+                        <li><span class="gras">AC 2</span> Comparer des algorithmes pour des problèmes classiques (tris simples, recherche…)</li>
+                        <li><span class="gras">AC 3</span> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'identifier le savoir-être et le savoir-faire. Cette ressource permet de se familiariser
+                        avec les éléments constitutifs du B.U.T. informatique (AC), de mieux cerner sa connaissance de soi et d'apprendre à
+                        définir ses compétences au travers de ses expériences.</p>
+                    <p class="gras">Savoirs de référence étudiés sur l'année</p>
+                    <ul>
+                        <li>- Appropriation de la démarche PPP : connaissance de soi (intérêt, curiosité, aspirations, motivations), accompagnement dans la définition d'une stratégie personnelle permettant la réalisation du projet professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Démarche réflexive et introspective (découverte de ses valeurs, qualités, motivations, savoirs, savoir-être, savoirs-faire) au travers, par exemple de son expérience et ses centres d'intérêt</li>
+                        <li>• Démarche prospective en termes d'avenir, souhait, motivation vis-à-vis d'un projet d'études ou professionnel</li>
+                        <li>• Initiation à la démarche réflexive (interrogation et analyse de son expérience)</li>
+                    </ul>
+                    <ul>
+                        <li>- Appropriation de la formation</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Appropriation des compétences de la formation (identification des blocs de compétences)</li>
+                        <li>• Référencement des compétences et association avec la réalité du terrain</li>
+                        <li>• Découverte et analyse des parcours B.U.T. de la spécialité</li>
+                        <li>• Accompagnement du choix des parcours</li>
+                    </ul>
+                    <ul>
+                        <li>- Découverte des métiers et connaissance du territoire</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Faire le lien avec les métiers (fiches ROME, association article 1)</li>
+                        <li>• Débouchés en fonction du territoire</li>
+                        <li>• Bassins d'entreprise, réseaux d'entreprise, implantations</li>
+                        <li>• Identifier les métiers en lien avec la formation, en analyser les principales caractéristiques</li>
+                    </ul>
+                    <ul>
+                        <li>- Projection dans un environnement professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Codes, usages et culture d'entreprise</li>
+                        <li>• Intégration des codes sociaux au niveau France, Europe pour s'ouvrir à la diversité culturelle, ouverture sur la mondialisation socio-économique</li>
+                        <li>• Construire son réseau professionnel : découvrir les réseaux et sensibiliser à l'identité numérique</li>
+                    </ul>
+                    <p class="gras">Savoirs de référence privilégiés ce semestre</p>
+                    <ul>
+                        <li>- Meilleure connaissance de soi</li>
+                        <li>- Définition de ses compétences au travers des expériences et des SAÉ</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><a href="competence2.html" class="hyperlinkrevenirhaut">Revenir en haut de la page</a></p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Plan du site à gauche -->
+            <div class="footer-section left">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- RGPD au centre -->
+            <div class="footer-section center">
+                <h4><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD - CNIL</a></h4>
+            </div>
+
+
+            <!-- Développement par à droite -->
+            <div class="footer-section right">
+                <h4>Développé par :</h4>
+                <p class="equipe">Equipe 4</p>
+                <p class="equipe">Younes, Tylan, Abigaelle, Matthéo, Florentin</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
