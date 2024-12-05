@@ -660,6 +660,7 @@ ul{
 
 #BUT {
   max-width: 200px;
+  max-height: 200px;
 }
   
 .BUT:hover {
