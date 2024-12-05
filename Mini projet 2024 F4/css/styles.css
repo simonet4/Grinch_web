@@ -766,6 +766,14 @@ hr {
         box-shadow: none;
     }
 
+    .competence-block{
+        flex-direction: column;
+    }
+
+    .competence-content{
+        flex-direction: column;
+    }
+
     
 
     /* Body */
