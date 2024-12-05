@@ -161,7 +161,6 @@ h3 {
     color: #000000;
 }
 
-
 .titreressource {
     display: flex;
     align-items: first baseline;
@@ -247,6 +246,17 @@ h1 {
     align-items: flex-start;
 }
 
+.partie-basse {
+    background-color: #fbeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .partie .gauche {
 	padding: 20px;
     flex: 1;
@@ -291,16 +301,6 @@ h1 {
     background-color: #ff7373; /* Nouvelle couleur lorsque la souris est dessus */
 }
 
-.partie-basse {
-    background-color: #fbeaea;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 5px;
-	display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
 
 .partie-basse .droite-b {
 	padding: 20px;
