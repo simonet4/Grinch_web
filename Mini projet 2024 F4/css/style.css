@@ -425,18 +425,6 @@ footer {
 }
 
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-ul li {
-    margin-bottom: 5px;
-}
-
-
 /* Style pour les liens */
 a {
     color: #ffffff; /* Blanc pour les liens */
