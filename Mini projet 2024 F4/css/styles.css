@@ -577,11 +577,9 @@ ul{
 }
 
 #BUT {
+  margin-right: 20px;
   max-width: 200px;
-}
-  
-.BUT:hover {
-  transform: scale(1.08);
+  max-height: 200px;
 }
 
 .IUT {
@@ -774,7 +772,15 @@ hr {
     .MainContentBloc {
         flex-direction: column;
     }
-
+    #BUT {
+        margin-right: 20px;
+        max-width: 200px;
+        max-height: 200px;
+        align-items: center;
+    }
+    .article {
+        flex-direction: column;
+    }
     .BlocImage, .Bloc, .Contact {
         width: 100%;
         margin: 10px 0;
