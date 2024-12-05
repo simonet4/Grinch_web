@@ -1,0 +1,108 @@
+﻿body{
+  background-color: #a4a4a4;
+}
+
+
+div.article {
+  display : flex;
+  padding: 10px;
+  margin : 10px; 
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+#BUT {
+  max-width: 200px;
+}
+  
+.BUT:hover {
+  transform: scale(1.08);
+}
+
+.IUT {
+  display: block;
+  max-width: 300px;
+  transition:
+    transform 0.3s;
+}
+  
+.IUT:hover {
+  background-color: #ffcccc;
+  transform: scale(1.08);
+}
+
+.article_contacts{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#list-contacts{
+  
+  padding: 10px;
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts{
+  display: flex;
+  
+}
+
+.contacts_menu{
+  display : flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0px;
+}
+
+
+.contacts_item_logo{
+  max-height: 50px;
+  margin: 10px;
+}
+
+#list-competences{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+
+
+}
+
+#list-competences-list{
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#bloc-competences{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin : 10px;
+}
+
+.competences{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
+  list-style-type: circle;
+  
+}
+
+p.competences{
+  max-width: 300px;
+}

@@ -1,0 +1,685 @@
+.gras {
+    font-weight: bold;
+}
+
+.ressources {
+    background-color: red;
+}
+
+table, th, td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+
+.hyperlinkrevenirhaut {
+    color: blue;
+    display : flex;
+    justify-content: center;
+}
+
+
+.titreressource {
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+}
+.coderessource{
+	
+}
+
+.droite {
+	
+}
+
+.soustitre {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+	background-color: #f8f8f8
+}
+
+/* Style général du corps */
+body {
+    font-family: 'Arial', sans-serif;
+    border: none;
+    background-color: #f8f8f8; /* Fond général clair */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+	background-color: #cc0000;
+	color: #ffffff;
+}
+
+.partie {
+    background-color:#fbeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.partie .gauche {
+	padding: 20px;
+    flex: 1;
+	background-color: #f5deb3;
+	width : 100%;
+}
+
+.partie .droite {
+	padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+	background-color: #eeaaaa;
+	border-radius: 10px;
+}
+
+.partie .droite .inputs {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 80%;
+}
+
+.image2 p {
+	background-color : #eeaaaa;
+    border-radius: 5px;
+	padding : 10px;
+}
+
+#boutenvoyer {
+    background-color: #cc0000; /* Couleur par défaut du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+#boutenvoyer:hover {
+    background-color: #ff7373; /* Nouvelle couleur lorsque la souris est dessus */
+}
+
+.partie-basse {
+    background-color: #fbeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.partie-basse .droite-b {
+	padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+	background-color: #c19a6b;
+	width : 50%;
+	padding-top : 55px;
+	padding-bottom : 55px;
+	max-height : 80%;
+}
+
+.partie-basse .gauche-b {
+	padding: 20px;
+    flex: 1;
+	background-color: #f5deb3;
+	width : 50%;
+	max-height : 80%;
+}
+
+#map {
+	width: 100%;
+    height: 80%;
+    object-fit: cover;
+	max-height: 350px;
+}
+
+#icon {
+	width: 100%;
+    height: 80%;
+    object-fit: cover;
+	max-height: 350px;
+}
+
+textarea {
+    width: 88%;
+    height: 151px; 
+	padding: 20px;
+	border-radius: 10px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+header {
+    background-color: #cc0000; /* Rouge principal */
+    color: #ffffff; /* Blanc pour le texte */
+}
+
+
+/* Section supérieure avec les logos */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Conserve le rouge pour homogénéité */
+}
+
+
+.logos-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.logo-right img {
+    height: 40px;
+}
+
+
+/* Menu de navigation */
+.nav-menu {
+    background-color: #cc0000; /* Rouge principal */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.nav-menu ul li {
+    flex-grow: 1;
+    text-align: center;
+    position: relative; /* Nécessaire pour le sous-menu */
+}
+
+
+.nav-menu ul li a {
+    color: #ffffff; /* Blanc pour le texte */
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+}
+
+
+/* Styles pour le menu déroulant */
+.dropdown-menu {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #9b9b9b; /* Blanc pour contraste */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #000000; /* Gris pour la bordure */
+    width: 200px;
+    z-index: 1000;
+}
+
+
+.dropdown-menu li {
+    text-align: left;
+}
+
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    color: #979797; /* Noir pour le texte */
+}
+
+
+.nav-menu ul li:hover .dropdown-menu {
+    display: block; /* Afficher le sous-menu au survol */
+    visibility: visible;
+}
+
+
+/* Couleurs au survol */
+.nav-menu ul li a:hover,
+.dropdown-menu li a:hover {
+    background-color: #ff9898; /* Noir pour contraste */
+    color: #000000e0; /* Blanc pour visibilité */
+}
+
+
+/* Footer */
+footer {
+    background-color: #666363; /* Gris pour footer */
+    color: #ffffff; /* Blanc pour le texte */
+    padding: 20px 0;
+    font-family: Arial, sans-serif; /* Police plus lisible */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.footer-section.left {
+    text-align: left;
+}
+
+
+.footer-section.right {
+    text-align: left; /* On change l'alignement de droite à gauche */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Style pour les liens */
+a {
+    color: #ffffff; /* Blanc pour les liens */
+    text-decoration: none; /* Pas de soulignement par défaut */
+    font-weight: bold; /* Mettre en gras pour plus de lisibilité */
+    transition: color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+
+a:hover {
+    color: #ff7373; /* Rouge au survol pour cohérence */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+
+/* Ajustement de la taille des titres */
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+/* Style pour les noms d'équipe */
+.team {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-weight: normal; /* Normal pour harmoniser avec le reste */
+    margin: 5px 0; /* Espacement pour aérer */
+    text-align: left; /* Alignement de gauche à droite */
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Bordure légère */
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Description */
+.description {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffebee; /* Rouge clair */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur de tableau */
+.table-container {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; /* Pour enlever bordure entre cellules */
+}
+
+th, td {
+    border-right: 1px solid;
+}
+/* Titre coefficient */
+.titrepage {
+    border: 1px solid #e53935; /* Rouge principal */
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffccbc; /* Orange clair */
+    color: #333; /* Texte sombre */
+    border-radius: 5px;
+}
+
+/* Image des compétences */
+.competence-img img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Bloc de compétences */
+.competence-block {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Contenu des compétences */
+.competence-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+    background-color: #ffffff; /* Fond blanc */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* Competence */
+.competence1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #e2c6bd;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Competence */
+.competence2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #f4baa9;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Competence */
+.competence3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #fae8a9;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Competence */
+.competence4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #cbd6ac;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Competence */
+.competence5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #adb7db;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Competence */
+.competence6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    height: 100px;
+    font-weight: bold;
+    background-color: #ccb5ad;
+    color: #000000; /* Noir text  */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+/* Wrapper pour les compétences */
+.competence-wrapper {
+    margin-bottom: 10%;
+}
+
+/* Effet de survol sur une compétence */
+.competence-content div:hover {
+    color: white; /* Texte blanc */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère mise en avant */
+}
+
+div.article {
+  display : flex;
+  padding: 10px;
+  margin : 10px; 
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+#BUT {
+  max-width: 200px;
+}
+  
+.BUT:hover {
+  transform: scale(1.08);
+}
+
+.IUT {
+  display: block;
+  max-width: 300px;
+  transition:
+    transform 0.3s;
+}
+  
+.IUT:hover {
+  background-color: #ffcccc;
+  transform: scale(1.08);
+}
+
+.article_contacts{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#list-contacts{
+  
+  padding: 10px;
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts{
+  display: flex;
+  
+}
+
+.contacts_menu{
+  display : flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0px;
+}
+
+
+.contacts_item_logo{
+  max-height: 50px;
+  margin: 10px;
+}
+
+#list-competences{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+
+
+}
+
+#list-competences-list{
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#bloc-competences{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin : 10px;
+}
+
+.competences{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
+  list-style-type: circle;
+  
+}
+
+p.competences{
+  max-width: 300px;
+}
+
+#wiki-lien{
+    color: #000000; /* Blanc pour les liens */
+    text-decoration: none; /* Pas de soulignement par défaut */
+    font-weight: bold; /* Mettre en gras pour plus de lisibilité */
+    transition: color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+#wiki-lien:hover {
+    color: #ff7373; /* Rouge au survol pour cohérence */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.img-competences{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background: #cc0000;
+    width: 75%; 
+    margin: 20px auto;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>TP 1</title>
+		<link rel="stylesheet" href="css/style.css">
+        <meta name="compétence" content="Présentation des ressources pour la compétence 3">
+    
+	</head>
+    <body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <!-- Logos à gauche -->
+            <div class="logos-left">
+                <img src="img/logo_iut.png" alt="Logo IUT de Toulouse" class="logo">
+                <img src="img/logo_ups.png" alt="Logo UPZ" class="logo"> <!-- logo UPS -->
+            </div>
+
+
+            <!-- Logo à droite -->
+            <div class="logo-right">
+                <img src="img/logo_but.png" alt="Logo BUT Informatique">
+            </div>
+        </div>
+
+
+        <!-- Menu de navigation horizontal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li class="dropdown">
+                    <a href="#">Compétences</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="competence1.html">Compétence 1</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>    
+    </header>
+        <h1>Compétence 3</h1>
+        <h2 class="titrepage">Administrer des systèmes informatiques communicants complexes</h2>
+        <div class="partieAC">
+            <img class="img-competences" alt="Compétences 3" src="data:image/png;base64,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" />
+            <div class="descriptioncompetence">
+                <p style="margin-bottom: 20px;">Liste des apprentissages critiques :</p>
+                <ul>
+                    <li><span class="gras">AC 1</span> Identifier les différents composants (matériels et logiciels) d'un système numérique</li>
+                    <li><span class="gras">AC 2</span> Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs</li>
+                    <li><span class="gras">AC 3</span> Installer et configurer un système d'exploitation et des outils de développement</li>
+                    <li><span class="gras">AC 4</span> Configurer un poste de travail dans un réseau d'entreprise</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence3">
+            <h3>Évaluation :</h3>
+            <table class="table-evaluation">
+                <tr class="table-evaluation couleurC3fonce">
+                    <th>Ressources</th> <td>R1.03</td> <td>R1.04</td> <td>R1.10</td> <td>R1.11</td> <td>R1.12</td>
+                </tr>
+                <tr class="table-evaluation">
+                    <th>Coefficient</th> <td>21</td> <td>21</td> <td>12</td> <td>6</td> <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="detailcompetence3">
+            <h3>SAE S1.03 : Installation d’un poste pour le développement</h3>
+            <div class="descriptioncompetence">
+                <ul>
+                    <li><span class="gras">AC 1</span> Identifier les différents composants (matériels et logiciels) d'un système numérique</li>
+                    <li><span class="gras">AC 2</span> Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs</li>
+                    <li><span class="gras">AC 3</span> Installer et configurer un système d'exploitation et des outils de développement</li>
+                    <li><span class="gras">AC 4</span> Configurer un poste de travail dans un réseau d'entreprise</li>
+                </ul>
+            </div>
+            <div class="descriptioncompetence">
+                <p class="gras">Problématique professionnelle et objectifs</p>
+                <p>La problématique professionnelle est de préparer un
+                    poste de travail pour des besoins de développement.
+                    Cette SAÉ permet d'expérimenter les missions
+                    d'installation de poste de travail.</p>
+                <p class="gras">Description générique</p>
+                <p>En partant d'un besoin exprimé par un client, il faut
+                    identifier les outils les plus adaptés aux besoins, les
+                    installer, les configurer et créer une notice d'utilisation.</p>
+                <p class="gras">Livrables attendus dans le monde professionnel</p>
+                <ul>
+                    <li>- Dossier d'étude et de choix des solutions</li>
+                    <li>- Notice d'utilisation</li>
+                    <li>- Présentation orale</li>
+                    <li>- Schéma de l'architecture logicielle</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="detailcompetence3">
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC3fonce">R1.03</h3>
+                    <h3>Développement d’interfaces web</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Identifier les différents composants (matériels et logiciels) d'un système numérique</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est de découvrir la structure et les composants d'un ordinateur. Cette ressource permet de
+                        découvrir les différents composants matériels et logiciels internes qui constituent un ordinateur, de manière à
+                        appréhender le fonctionnement, mais aussi les limites de leur utilisation.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Architecture générale d'un ordinateur, histoire et évolution de l'informatique</li>
+                        <li>- Codage (codage des informations de base : nombres, caractères)</li>
+                        <li>- Arithmétique des traitements associés</li>
+                        <li>- Étude d'un ordinateur personnel (composants…)</li>
+                        <li>- Évolution des technologies et des systèmes</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC3fonce">R1.04</h3>
+                    <h3>Introduction aux systèmes d’exploitation et à leur fonctionnement</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 2</span> Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs</li>
+                        <li><span class="gras">AC 3</span> Installer et configurer un système d'exploitation et des outils de développement</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est de comprendre le rôle, les composants et le fonctionnement d'un système
+                        d'exploitation. Cette ressource permet de découvrir les principes d'un système d'exploitation, leur mode de
+                        fonctionnement et les différents types existants. Elle contribue à comprendre comment installer un système sur une
+                        machine et à le personnaliser en développant des fonctions simples facilitant la configuration et le paramétrage.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Caractéristiques et types de systèmes d'exploitations</li>
+                        <li>- Langage de commande (commandes de base, introduction à la programmation des scripts)</li>
+                        <li>- Gestion des processus (création, destruction, suivi…)</li>
+                        <li>- Gestion des fichiers (types, droits…)</li>
+                        <li>- Gestion des utilisateurs (caractéristiques, création, suppression…)</li>
+                        <li>- Principes de l'installation et de la configuration d'un système : notion de noyau, de pilotes, de fichiers de configuration, boot système…</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC3fonce">R1.10</h3>
+                    <h3>Anglais</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 1</span> Identifier les différents composants (matériels et logiciels) d'un système numérique</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'introduire l'anglais de spécialité informatique et de développer sa culture générale et scientifique. Cette ressource permet l'acquisition du vocabulaire de base de l'informatique.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Vocabulaire de base de l'informatique et de la bureautique</li>
+                        <li>- Initiation aux techniques de présentation orale</li>
+                        <li>- Compréhension des ressources à l'écrit et à l'oral (par ex. : documentations, tutoriels, documents scientifiques d'actualité…)</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC3fonce">R1.11</h3>
+                    <h3>Bases de la communication</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>
+                        <li><span class="gras">AC 4</span> Configurer un poste de travail dans un réseau d'entreprise</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'aborder les fondamentaux de la communication. Cette ressource permet une
+                        approche sur l'importance de bien communiquer face à un client, de formuler ses questions de manière claire et
+                        pertinente pour recueillir les besoins du client. Elle permet de développer l'esprit critique et la capacité d'analyse
+                        nécessaires à la collecte d'informations. Enfin, la ressource permet la mise en place et l'appropriation d'outils de
+                        communication pour restituer les informations (sous formes diverses du papier au web) à destination d'un client ou
+                        d'une équipe.</p>
+                    <p class="gras">Savoirs de référence étudiés</p>
+                    <ul>
+                        <li>- Communication verbale et non verbale</li>
+                        <li>- Recherche documentaire, appropriation, réutilisation de l'information, prise de notes, analyse critique des sources</li>
+                        <li>- Développement d'une attitude critique</li>
+                        <li>- Recueil des besoins (méthode de collecte, d'enquête, d'interview)</li>
+                        <li>- Conception de documents de communication (sous divers formats dont numériques)</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="titreressource">
+                    <h3 class="couleurC3fonce">R1.12</h3>
+                    <h3>Projet professionnel et personnel</h3>
+                </div>
+                <div class="descriptioncompetence">
+                    <ul>                        
+                        <li><span class="gras">AC 1</span> Identifier les différents composants (matériels et logiciels) d'un système numérique</li>
+                        <li><span class="gras">AC 2</span> Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs</li>
+                        <li><span class="gras">AC 3</span> Installer et configurer un système d'exploitation et des outils de développement</li>
+                        <li><span class="gras">AC 4</span> Configurer un poste de travail dans un réseau d'entreprise</li>
+                    </ul>
+                </div>
+                <div class="descriptioncompetence">
+                    <p class="titredescritpion">Descriptif détaillé</p>
+                    <p class="gras">Objectif</p>
+                    <p>L'objectif de cette ressource est d'identifier le savoir-être et le savoir-faire. Cette ressource permet de se familiariser
+                        avec les éléments constitutifs du B.U.T. informatique (AC), de mieux cerner sa connaissance de soi et d'apprendre à
+                        définir ses compétences au travers de ses expériences.</p>
+                    <p class="gras">Savoirs de référence étudiés sur l'année</p>
+                    <ul>
+                        <li>- Appropriation de la démarche PPP : connaissance de soi (intérêt, curiosité, aspirations, motivations), accompagnement dans la définition d'une stratégie personnelle permettant la réalisation du projet professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Démarche réflexive et introspective (découverte de ses valeurs, qualités, motivations, savoirs, savoir-être, savoirs-faire) au travers, par exemple de son expérience et ses centres d'intérêt</li>
+                        <li>• Démarche prospective en termes d'avenir, souhait, motivation vis-à-vis d'un projet d'études ou professionnel</li>
+                        <li>• Initiation à la démarche réflexive (interrogation et analyse de son expérience)</li>
+                    </ul>
+                    <ul>
+                        <li>- Appropriation de la formation</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Appropriation des compétences de la formation (identification des blocs de compétences)</li>
+                        <li>• Référencement des compétences et association avec la réalité du terrain</li>
+                        <li>• Découverte et analyse des parcours B.U.T. de la spécialité</li>
+                        <li>• Accompagnement du choix des parcours</li>
+                    </ul>
+                    <ul>
+                        <li>- Découverte des métiers et connaissance du territoire</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Faire le lien avec les métiers (fiches ROME, association article 1)</li>
+                        <li>• Débouchés en fonction du territoire</li>
+                        <li>• Bassins d'entreprise, réseaux d'entreprise, implantations</li>
+                        <li>• Identifier les métiers en lien avec la formation, en analyser les principales caractéristiques</li>
+                    </ul>
+                    <ul>
+                        <li>- Projection dans un environnement professionnel</li>
+                    </ul>
+                    <ul class="doubleul">
+                        <li>• Codes, usages et culture d'entreprise</li>
+                        <li>• Intégration des codes sociaux au niveau France, Europe pour s'ouvrir à la diversité culturelle, ouverture sur la mondialisation socio-économique</li>
+                        <li>• Construire son réseau professionnel : découvrir les réseaux et sensibiliser à l'identité numérique</li>
+                    </ul>
+                    <p class="gras">Savoirs de référence privilégiés ce semestre</p>
+                    <ul>
+                        <li>- Meilleure connaissance de soi</li>
+                        <li>- Définition de ses compétences au travers des expériences et des SAÉ</li>
+                        <li>- Les différents savoirs de référence pourront être approfondis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><a href="competence3.html" class="hyperlinkrevenirhaut">Revenir en haut de la page</a></p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Plan du site à gauche -->
+            <div class="footer-section left">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- RGPD au centre -->
+            <div class="footer-section center">
+                <h4><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">RGPD - CNIL</a></h4>
+            </div>
+
+
+            <!-- Développement par à droite -->
+            <div class="footer-section right">
+                <h4>Développé par :</h4>
+                <p class="equipe">Equipe 4</p>
+                <p class="equipe">Younes, Tylan, Abigaelle, Matthéo, Florentin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
