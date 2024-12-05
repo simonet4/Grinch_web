@@ -45,6 +45,7 @@
     display: flex;
     gap: 10px;
 }
+
 .navbar .menu a {
     display: flex;
     align-items: center;
@@ -760,15 +761,10 @@ hr {
         width: 100%;
         align-items: center;
     }
-    .navbar .menu a {
-        width: 100%;
-        text-align: center;
-    }
     .dropdown-content {
         position: static;
         box-shadow: none;
     }
-    
 
     /* Body */
     .mainbody {
@@ -794,8 +790,5 @@ hr {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
     }
 
-    /* Footer */
-    
-    
-    
+    /* Footer */   
 }
