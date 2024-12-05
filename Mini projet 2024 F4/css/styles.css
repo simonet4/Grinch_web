@@ -387,6 +387,7 @@ h4 {
 /* Conteneur principal */
 .container {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     padding: 20px;
     border: 1px solid #ddd; /* Bordure légère */
@@ -438,6 +439,7 @@ h4 {
     justify-content: center;
     gap: 20px;
     align-items: center;
+    flex-direction: column;
 }
 
 /* Contenu des compétences */
@@ -450,6 +452,7 @@ h4 {
     background-color: #ffffff; /* Fond blanc */
     border: 1px solid #ddd;
     border-radius: 10px;
+    flex-direction: column;
 }
 
 
@@ -740,7 +743,7 @@ hr {
 }
 
 /* Responsivité */
-@media (max-width: 800px) {
+@media (max-width: 700) {
     
     /* Header */
     .header {
@@ -759,15 +762,6 @@ hr {
         position: static;
         box-shadow: none;
     }
-
-    .competence-block{
-        flex-direction: column;
-    }
-
-    .competence-content{
-        flex-direction: column;
-    }
-
     
 
     /* Body */
@@ -793,6 +787,7 @@ hr {
         border-radius: 10px; /* Coins arrondis */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
     }
+
     /* Footer */
     
     
