@@ -406,14 +406,12 @@ h4 {
 }
 
 /* Conteneur de tableau */
-.table-container {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-collapse: collapse; /* Pour enlever bordure entre cellules */
+.tableau{
+    background-color: lightgray;
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
 }
 
 /* Titre coefficient */
@@ -429,7 +427,7 @@ h4 {
 
 /* Image des compétences */
 .competence-img img {
-    width: 600px;
+    width: 150px;
     height: auto;
     border-radius: 10px; /* Coins arrondis */
 }
@@ -782,6 +780,16 @@ hr {
     .BlocImage, .Bloc, .Contact {
         width: 100%;
         margin: 10px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border: 1px solid #ddd; /* Bordure légère */
+        background-color: #ffffff; /* Fond blanc */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
     }
     /* Footer */
     
