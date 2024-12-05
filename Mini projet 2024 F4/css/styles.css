@@ -6,6 +6,7 @@
 	color: #ffffff;
 }
 .header {
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +29,6 @@
     text-align: center;
     flex-grow: 2;  /* Augmente l'espace pour le titre */
     font-size: 1.5rem;
-    white-space: nowrap;  /* Empêche le titre de s'étendre sur plusieurs lignes */
 }
 .navbar {
     display: flex;
@@ -749,7 +749,7 @@ hr {
 }
 
 /* Responsivité */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     
     /* Header */
     .header {
