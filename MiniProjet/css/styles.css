@@ -307,24 +307,36 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #002147;
     color: white;
+    flex-wrap: wrap; /* Ajouté pour que les éléments se déplacent si nécessaire */
 }
-.header img {
-    width: 180px;
+.images-left, .images-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.images-left img, .images-right img {
+    width: 100%;  /* Rend l'image responsive */
     height: auto;
+    max-width: 160px;  /* Limite la taille maximale de l'image */
+    flex: 1;  /* Permet à l'image de s'adapter à l'espace disponible */
 }
 .title {
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 2;  /* Augmente l'espace pour le titre */
     font-size: 1.5rem;
+    white-space: nowrap;  /* Empêche le titre de s'étendre sur plusieurs lignes */
 }
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+.radius {
+    margin: 20px;
     background-color: #002147;
+    border-radius: 10px;
 }
 .navbar .menu {
     display: flex;
@@ -381,6 +393,13 @@ a {
     visibility: visible;
     opacity: 1;
 }
+
+
+
+
+
+
+
 
 
 
