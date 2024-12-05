@@ -798,3 +798,75 @@ hr {
 
     /* Footer */   
 }
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8; /* Fond clair */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.mainbody {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #cc0000; /* Rouge principal */
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.enigme-button {
+    padding: 15px 20px;
+    background-color: #d81920; /* Rouge principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.enigme-button:hover {
+    background-color: #bb181a;
+    transform: scale(1.05);
+}
+
+.enigme-button::after {
+    content: attr(data-enigme);
+    display: none;
+    background-color: #fff7e6; /* Fond clair pour énigme */
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enigme-button:hover::after {
+    display: block;
+}
