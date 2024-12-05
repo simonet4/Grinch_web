@@ -1,4 +1,10 @@
 /* Header */
+.title h1{
+    text-align: center;
+    margin-top: 20px;
+	background-color: #002147;
+	color: #ffffff;
+}
 .header {
     display: flex;
     justify-content: space-between;
