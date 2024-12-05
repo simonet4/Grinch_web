@@ -442,7 +442,7 @@ h4 {
 
 /* Contenu des compétences */
 .competence-content {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 10px;
@@ -746,7 +746,7 @@ hr {
 }
 
 /* Responsivité */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     
     /* Header */
     .header {
