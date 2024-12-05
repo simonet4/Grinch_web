@@ -753,11 +753,7 @@ hr {
         box-shadow: none;
     }
 
-    /* Footer */
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
+    
 
     /* Body */
     .mainbody {
@@ -772,7 +768,11 @@ hr {
         width: 100%;
         margin: 10px 0;
     }
-
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
     
     
 }
