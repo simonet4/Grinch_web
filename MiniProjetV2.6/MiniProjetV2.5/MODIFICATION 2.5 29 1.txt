@@ -1,0 +1,15 @@
+Modifications:
+
+Verification W3C (il manque seulement les images des compétences)
+responsivité de la plupart des pages, la je vais dodo tant pis
+
+---------V3 mod Ismael ---------
+
+html des compétences complété
+modification de l'image dans le contact.html et l'image de l'IUT dans index.html
+ajout des interbloc demandé dans toute les compétences
+ajout de la classe .interbloc pour les mettre en bleu
+
+supprimer les ressources en trop dans les compétence dans BUT.html
+
+ajouté la partie de greg

@@ -1,0 +1,20 @@
+Organisation du Groupe 5
+Membres : Michon Ismael, Victor Simonet, Thomas Viguier-Marie, Grégoire Gibrat 
+
+documents html
+- page d'accueil (index.html)
+- page de présentation du BUT
+- page Compétences
+- page contact
+
+
+- page css (styles.css)
+
+repartition du travail
+
+header and footer --> Victor
+
+css Attention class et id en commun
+
+
+
