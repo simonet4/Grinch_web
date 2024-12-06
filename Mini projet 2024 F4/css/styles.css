@@ -932,9 +932,10 @@ hr {
 .tree-popup {
     display: none; 
     position: fixed; 
-    top: 20px;
-    right: 20px; 
-    z-index: 9999; 
+    top: -10%;
+    right: -37%; 
+    z-index: 9999;
+    position: relative; 
 }
 
 .tree-popup img {
