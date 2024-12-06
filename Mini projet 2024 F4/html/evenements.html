@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,8 @@
                <img src="../images/logo_iut.png" alt="Logo IUT">
            </div>
            <div class="title">
-               <h1>Université Paul Sabatier</h1>
+               <h1 id="showCountdown">Université Paul Sabatier</h1>
+               <div id="countdown" class="countdown"></div>
            </div>
            <div class="images-right">
                <img src="../images/BUTImg.png" alt="Logo BUT">
@@ -408,8 +409,31 @@
             }
         }
 
+        document.getElementById("showCountdown").addEventListener("click", function() {
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.classList.add("show");
+            const targetDate = new Date("December 25, 2024 00:00:00").getTime();
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+                
+                if (distance <= 0) {
+                    countdownElement.innerHTML = "Merry Christmas!";
+                    clearInterval(interval);
+                } else {
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+            }, 1000);
+            setTimeout(function() {
+                countdownElement.classList.remove("show");
+            }, 20000);  
+        });
     </script>
-    <!-- Footer -->
 <footer class="footer">
     <div class="plan-du-site">
         <h3>Plan du site</h3>
