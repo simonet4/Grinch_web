@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Changer de Thème</title>
+    <meta name="description" content="Page pour changer de thème entre clair et sombre.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .mainbody {
+            padding: 20px;
+            margin: 30px;
+            border-radius: 15px;
+            transition: background-color 0.5s, color 0.5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .theme-button {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .theme-button input {
+            display: none;
+        }
+
+        .theme-button label {
+            cursor: pointer;
+            background-color: #d81920;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.5s, transform 0.3s;
+        }
+
+        .theme-button label:hover {
+            background-color: #bb181a;
+            transform: scale(1.05);
+        }
+
+        /* Thème clair par défaut */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .mainbody {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Thème sombre activé par la case à cocher */
+        input:checked ~ .mainbody,
+        input:checked ~ body {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        input:checked ~ .theme-button label {
+            background-color: #444444;
+            color: #ffffff;
+        }
+
+        input:checked ~ .theme-button label:hover {
+            background-color: #555555;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .enigme-button {
+            padding: 15px 20px;
+            background-color: #d81920;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        .enigme-button:hover {
+            background-color: #bb181a;
+            transform: scale(1.05);
+        }
+
+        .enigme-button::after {
+            content: attr(data-enigme);
+            display: none;
+            background-color: #fff7e6;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .enigme-button:hover::after {
+            display: block;
+        }
+
+        /* Message en bas de l'écran */
+        .-mode-message {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #444;
+            color: white;
+            text-aligdarkn: center;
+            padding: 10px 0;
+            font-size: 16px;
+            z-index: 1000;
+            transition: background-color 0.5s;
+        }
+
+        /* Affiche le message en mode sombre */
+        input:checked ~ .dark-mode-message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-checkbox" style="display:none;">
+    <div class="theme-button">
+        <label for="theme-checkbox">Changer de Thème</label>
+    </div>
+    <div class="mainbody">
+        <h1>Changer de Thème</h1>
+        <p>Utilisez le bouton ci-dessus pour basculer entre les thèmes clair et sombre.</p>
+        <div class="buttons-container">
+            <button class="enigme-button" data-enigme="Enigme 1">Bouton 1</button>
+            <button class="enigme-button" data-enigme="Enigme 2">Bouton 2</button>
+            <button class="enigme-button" data-enigme="Enigme 3">Bouton 3</button>
+            <!-- Ajoute d'autres boutons ici -->
+        </div>
+        <div id="enigme-text" class="enigme-text">Passez votre souris sur les boutons pour voir les énigmes.</div>
+    </div>
+    <div class="dark-mode-message">Mode sombre activé</div> <!-- Message affiché en bas de l'écran en mode sombre -->
+</body>
+</html>
