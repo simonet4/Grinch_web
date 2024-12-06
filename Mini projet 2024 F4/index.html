@@ -305,11 +305,12 @@
             </ul>
         </div>
         <div class="rgpd">
-            <h3>RGPD</h3>
-            <ul>
-                <li><a href="https://www.cnil.fr/fr">CNIL</a></li>
-            </ul>
-        </div>
+                <a href="#" id="snowLink">RGPD</a>
+                <div id="snowContainer"></div>
+                <ul>
+                    <li><a href="https://www.cnil.fr/fr">CNIL</a></li>
+                </ul>
+            </div>
         <div class="enterprise-info">
             <h3>Entreprise</h3>
             <ul>
@@ -321,6 +322,28 @@
             </ul>
         </div>
     </footer>
-	
+    <script>
+        document.getElementById('snowLink').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            const snowContainer = document.getElementById('snowContainer');
+    
+            snowContainer.innerHTML = '';
+            snowContainer.style.display = 'block';
+    
+            const numSnowflakes = 100;
+            for (let i = 0; i < numSnowflakes; i++) {
+                let snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄'; 
+                snowflake.style.left = Math.random() * 100 + 'vw'; 
+                snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; 
+                snowContainer.appendChild(snowflake);
+            }
+
+            setTimeout(function() {
+                snowContainer.style.display = 'none';
+            }, 10000);
+        });
+    </script>
 </body>
 </html>
