@@ -45,7 +45,10 @@
           </div>
       </div>
     </header>
-        <h1>Compétence 4</h1>
+        <div id="treePopup" class="tree-popup">
+            <img src="..\images\ChristmasTree.gif" alt="Christmas Tree">
+        </div>
+        <h1 id="treeTitle">Compétence 4</h1>
         <h2 class="titrepage">Gérer des données de l’information</h2>
         <div class="partieAC">
             <img class="img-competences" alt="Compétences 4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkECwQIvrmqvJ4lot2sAg5ViN0UaFGiwtt1MDlnDuOwqTnOer2oky2rv9qk2XItrlsIzE&usqp=CAU" />
@@ -288,5 +291,15 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const title = document.getElementById('treeTitle');
+        const treePopup = document.getElementById('treePopup');
+        title.addEventListener('click', () => {
+            treePopup.style.display = 'block';
+            setTimeout(() => {
+                treePopup.style.display = 'none';
+            }, 20000); 
+        });
+    </script>
 </body>
 </html>
