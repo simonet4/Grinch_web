@@ -435,7 +435,7 @@
             <li><a href="https://www.cnil.fr/fr">CNIL</a></li>
         </ul>
     </div>
-    <div class="enterprise-info">
+    <div class="enterprise-info" id="enterprise-info">
         <h3>Entreprise</h3>
         <ul>
             <li>Nom de l'équipe</li>
@@ -446,5 +446,19 @@
         </ul>
     </div>
 </footer>
+<script>
+    document.getElementById('enterprise-info').addEventListener('click', function () {
+        var body = document.body;
+        if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('christmas-theme');
+        } else if (body.classList.contains('christmas-theme')) {
+            body.classList.remove('christmas-theme');
+            body.classList.add('light-theme');
+        }
+    });
+</script>
+
+
 </body>
 </html>
