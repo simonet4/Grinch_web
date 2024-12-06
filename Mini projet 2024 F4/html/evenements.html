@@ -71,9 +71,9 @@
     </div>
     <div class="message" id="message1">Le temps presse! Bienvenue! Pour avoir une idée du temps qu'il vous reste essayez d'interagir avec l'université Paul Sabatier là où les évènements résident</div>
     <div class="message" id="message2">D'ailleurs, bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air!</div>
-    <div class="message" id="message3"> </div>
-    <div class="message" id="message4">Le temps presse! Bienvenue!  </div>
-    <div class="message" id="message5">bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air! </div>
+    <div class="message" id="message3">Après une tempête, vous devez retrouver un ami enneigé dans l'entreprise des débuts! Même lieu que la tempête. Afin de garder votre ami au frais.  </div>
+    <div class="message" id="message4">L'entreprise des évènements vous réserve une surprise qui vous fare voir de toutes les couleurs!  </div>
+    <div class="message" id="message5">Vous avez encore perdu votre ami enneigé, recherchez le </div>
     <div class="message" id="message6">Le temps presse! Bienvenue!  </div>
     <div class="message" id="message7">bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air! </div>
     <div class="message" id="message8">Le temps presse! Bienvenue!  </div>
@@ -435,8 +435,8 @@
             <li><a href="https://www.cnil.fr/fr">CNIL</a></li>
         </ul>
     </div>
-    <div class="enterprise-info" id="enterprise-info">
-        <h3>Entreprise</h3>
+    <div class="enterprise-info">
+        <h3 href="#" id="enterprise-info">Entreprise</h3>
         <ul>
             <li>Nom de l'équipe</li>
             <li>Ismaël Michon</li>
@@ -448,16 +448,17 @@
 </footer>
 <script>
     document.getElementById('enterprise-info').addEventListener('click', function () {
-        var body = document.body;
-        if (body.classList.contains('light-theme')) {
-            body.classList.remove('light-theme');
-            body.classList.add('christmas-theme');
-        } else if (body.classList.contains('christmas-theme')) {
-            body.classList.remove('christmas-theme');
-            body.classList.add('light-theme');
+        var header = document.querySelector('header.title');
+        if (header.classList.contains('light-theme')) {
+            header.classList.remove('light-theme');
+            header.classList.add('christmas-theme');
+        } else if (header.classList.contains('christmas-theme')) {
+            header.classList.remove('christmas-theme');
+            header.classList.add('light-theme');
         }
     });
 </script>
+
 
 
 </body>

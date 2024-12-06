@@ -97,25 +97,6 @@
     visibility: visible;
     opacity: 1;
 }
-/* Thème de Noël pour le header */
-body.christmas-theme .title h1 {
-    background-color: #ff0000; /* Rouge de Noël */
-    color: #ffffff;
-}
-
-body.christmas-theme .header {
-    color: white;
-}
-
-body.christmas-theme .navbar .menu a {
-    background-color: #008000; /* Vert de Noël */
-    color: white;
-}
-
-body.christmas-theme .navbar .menu a:hover {
-    background-color: #006400;
-    transform: scale(1.05);
-}
 
 /* /Header */
 
