@@ -69,6 +69,7 @@
         <button onclick="showMessage22()" class="button-event">Jour 22</button>
         <button onclick="showMessage23()" class="button-event">Jour 23</button>
         <button onclick="showMessage24()" class="button-event">Jour 24</button>
+        <img id="grinch" src="..\images\grinch.gif" alt="grinch">
     </div>
     <div class="message" id="message1">Le temps presse! Bienvenue! Pour avoir une idée du temps qu'il vous reste essayez d'interagir avec l'université Paul Sabatier là où les évènements résident</div>
     <div class="message" id="message2">D'ailleurs, bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air!</div>
@@ -79,7 +80,9 @@
     <div class="message" id="message7">Connaissez vous un des principaux symboles de noël? trouvez le dans le titre de la quatuor compétence</div>
     <div class="message" id="message8">Dans La deuxième compétence de cette magnifique interface web, vous trouverez le hit du moment parmi les créateurs du site  </div>
     <div class="message" id="message9">Les cadeaux ne vont pas tarder a arriver! appuyer sur le "plan du site" pas loin d'ici pour voir sa localisation!</div>
-    <div class="message" id="message10">AHHHHHHH, les cadeaux! :(</div>
+    
+    <div class="message" id="message10" >AHHHHHHH, les cadeaux! :(</div>
+    
     <div class="message" id="message11">bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air! </div>
     <div class="message" id="message12">Le temps presse! Bienvenue!  </div>
     <div class="message" id="message13">bienvenue dans notre calendrier de l'avent! Pour commencer cette aventure titillez Le titre grisée qui contient le lien du Cnil dans la page où vous avez été accueilli, vous risquez d'avoir un courant d'air! </div>
@@ -215,16 +218,26 @@
         }
         function showMessage10() {
             const message = document.getElementById('message10');
+            const grinch = document.getElementById('grinch');
             if (message.style.display === 'block') {
                 message.style.animation = 'fadeOut 0.5s';
                 setTimeout(() => {
                     message.style.display = 'none';
-                    message.style.animation = ''; 
+                    message.style.animation = '';
+                    function showgrinch() {
+            grinch.classList.add('show'); 
+            setTimeout(() => {
+                grinch.classList.remove('show');
+            }, 20000);
+        }
+        
+        message.addEventListener('click', showgrinch); 
                 }, 500); 
             } else {
                 message.style.display = 'block';
                 message.style.animation = 'fadeIn 0.5s';
             }
+
         }
         function showMessage11() {
             const message = document.getElementById('message11');
@@ -434,6 +447,7 @@
             }, 20000);  
         });
     </script>
+    
     <img id="santa" src="..\images\santa.gif" alt="Santa Claus">
 <footer class="footer">
     <div class="plan-du-site">
@@ -493,6 +507,8 @@
         }
         
         santaTitle.addEventListener('click', showSanta);
+        
+       
 </script>
 
 
