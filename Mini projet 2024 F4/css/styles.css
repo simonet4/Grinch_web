@@ -922,4 +922,15 @@ hr {
     animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
 }
 
+.snowman-popup {
+    display: none; 
+    position: relative; 
+    z-index: 9999; 
+}
+
+.snowman-popup img {
+    width: 100px;
+    height: auto;
+}
+
 

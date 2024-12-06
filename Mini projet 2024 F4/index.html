@@ -313,7 +313,10 @@
                 </ul>
             </div>
         <div class="enterprise-info">
-            <h3>Entreprise</h3>
+            <h3 id="gifTitle" class="title">Entreprise</h3>
+            <div id="snowmanPopup" class="snowman-popup">
+                <img src="..\images\animanias-emoji.gif" alt="Snowman GIF">
+            </div>
             <ul>
                 <li>Nom de l'équipe</li>
                 <li>Ismaël Michon</li>
@@ -345,6 +348,18 @@
                 snowContainer.style.display = 'none';
             }, 100000);
         });
+
+        const title = document.getElementById('gifTitle');
+        const snowmanPopup = document.getElementById('snowmanPopup');
+
+
+        title.addEventListener('click', () => {
+        snowmanPopup.style.display = 'block';
+
+        setTimeout(() => {
+        snowmanPopup.style.display = 'none';
+    }, 20000); 
+});
     </script>
 </body>
 </html>
