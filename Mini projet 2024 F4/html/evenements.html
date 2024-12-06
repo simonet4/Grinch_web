@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Buttons</title>
+    <title>Toggle Message</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <header>
@@ -75,10 +75,16 @@
     <script>
         function showMessage() {
             const message = document.getElementById('message');
-            message.style.display = 'block';
-            setTimeout(() => {
-                message.style.display = 'none';
-            }, 5000);
+            if (message.style.display === 'block') {
+                message.style.animation = 'fadeOut 0.5s';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                    message.style.animation = ''; 
+                }, 500); 
+            } else {
+                message.style.display = 'block';
+                message.style.animation = 'fadeIn 0.5s';
+            }
         }
     </script>
 </body>
