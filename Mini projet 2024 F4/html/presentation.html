@@ -199,7 +199,45 @@
                 <div class="competence-content">
                     <div class="competence1"><h3>R1.01 - Initiation au développement</h3></div>
                     <div class="competence1"><h3>R1.02 - Développement d'interfaces web</h3></div>
-                    <div class="competence1"><h3>R1.10 - Anglais technique</h3></div>
+                    <div class="competence1">
+                        <h3 id="anglais-technique">R1.10 - Anglais technique</h3>
+                    </div>
+                    <div id="texte" style="display: none;">
+                        <p>The world is dressed in white,<br>
+                            A blanket pure and bright.<br>
+                            The stars adorn the sky,<br>
+                            With twinkling light, they lie.<br>
+                            
+                            Children's laughter fills the air,<br>
+                            Joy and wonder everywhere.<br>
+                            Stockings hang by the fire's glow,<br>
+                            Warmth and love in hearts we sow.<br>
+                            
+                            Bells are ringing, carols sing,<br>
+                            The spirit of Christmas in everything.<br>
+                            Gifts of kindness, acts of grace,<br>
+                            Bring a smile to every face.<br>
+                            
+                            Snowflakes dance on winter's breeze,<br>
+                            Whispers of magic through the trees.<br>
+                            In every home, a tree stands tall,<br>
+                            With lights and ornaments, it enthralls.<br>
+                            
+                            Peace and hope, they light the way,<br>
+                            Through the night and into day.<br>
+                            May your Christmas be merry and bright,<br>
+                            Filled with love, joy, and delight.</p>
+                    </div>
+                    <script>
+                        document.getElementById('anglais-technique').addEventListener('click', function () {
+                            var texte = document.getElementById('texte');
+                            if (texte.style.display === 'none') {
+                                texte.style.display = 'block';
+                            } else {
+                                texte.style.display = 'none';
+                            }
+                        });
+                    </script>                    
                 </div>
             </div>
       
