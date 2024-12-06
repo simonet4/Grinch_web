@@ -315,10 +315,24 @@
             <ul>
                 <li>Equipe Trauma Team</li>
                 <li>Ayant Contribué au projet:</li>
-                <li>Jay Agil Yoogan RAMASAMY</li>
-                <li>Victor Simonet Alves Santos</li>
+                <li id="songTitle1">Jay Agil Yoogan RAMASAMY</li>
+                <li id="songTitle2">Victor Simonet Alves Santos</li>
             </ul>
+            <audio id="song" src="..\images\jingle-bells-violin-main(chosic.com).mp3"></audio>
         </div>
     </footer>
+
+    <script>
+        const title1 = document.getElementById('songTitle1');
+        const title2 = document.getElementById('songTitle2');
+        const song = document.getElementById('song');
+        function playSong() {
+            song.pause();        
+            song.currentTime = 0; 
+            song.play();       
+        }
+        title1.addEventListener('click', playSong);
+        title2.addEventListener('click', playSong);
+    </script>
 </body>
 </html>

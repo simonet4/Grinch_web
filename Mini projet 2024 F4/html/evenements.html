@@ -434,9 +434,10 @@
             }, 20000);  
         });
     </script>
+    <img id="santa" src="..\images\santa.gif" alt="Santa Claus">
 <footer class="footer">
     <div class="plan-du-site">
-        <h3>Plan du site</h3>
+        <h3 id="santaTitle" >Plan du site</h3>
         <ul>
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="presentation.html">Présentation du BUT</a></li>
@@ -480,6 +481,18 @@
             header.classList.add('light-theme');
         }
     });
+
+    const santaTitle = document.getElementById('santaTitle');
+        const santa = document.getElementById('santa');
+
+        function showSanta() {
+            santa.classList.add('show'); 
+            setTimeout(() => {
+                santa.classList.remove('show');
+            }, 20000);
+        }
+        
+        santaTitle.addEventListener('click', showSanta);
 </script>
 
 
